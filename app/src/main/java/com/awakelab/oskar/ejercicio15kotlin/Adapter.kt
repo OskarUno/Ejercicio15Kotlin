@@ -1,5 +1,5 @@
 package com.awakelab.oskar.ejercicio15kotlin
-
+//https://youtu.be/5xXTTdTAdU8 video con explicaicon RecyclearView similar
 
 import android.content.Context
 import android.view.LayoutInflater
