@@ -50,6 +50,18 @@
                 app:layout_constraintVertical_bias="1.0" />
 
             <TextView
+                android:id="@+id/tvId"
+                android:layout_width="28dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:textColor="#FBFBFB"
+                app:layout_constraintBottom_toBottomOf="@+id/tvNombre"
+                app:layout_constraintEnd_toEndOf="@+id/tvNombre"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toStartOf="@+id/tvNombre"
+                app:layout_constraintTop_toTopOf="@+id/tvNombre" />
+
+            <TextView
                 android:id="@+id/tvTipo"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
@@ -75,6 +87,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:srcCompat="@tools:sample/avatars" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>

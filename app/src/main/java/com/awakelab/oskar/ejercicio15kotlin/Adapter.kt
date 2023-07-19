@@ -1,11 +1,9 @@
 package com.awakelab.oskar.ejercicio15kotlin
 //https://youtu.be/5xXTTdTAdU8 video con explicaicon RecyclearView similar
+//https://devexpert.io/recyclerview-android/
 
-import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.awakelab.oskar.ejercicio15kotlin.databinding.ItemLayoutBinding
 import com.bumptech.glide.Glide
@@ -35,8 +33,9 @@ class Adapter : RecyclerView.Adapter<Adapter.ViewHolder>() {
     }
 
     class ViewHolder(val binding: ItemLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
-        private var imageView: ImageView? = null
+
         fun bind(pokemon: Pokemon) {
+            binding.tvId.text = pokemon.id.substring(1).toInt().toString()
             binding.tvNombre.text = pokemon.nombre
             binding.tvTipo.text = pokemon.tipo
             binding.imageView.let {
